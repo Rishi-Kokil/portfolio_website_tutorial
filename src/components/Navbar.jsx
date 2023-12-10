@@ -24,12 +24,12 @@ const Navbar = () => {
 
           <img src={logo} alt="logo" className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex'> Rishi Kokil &nbsp;
-            <span className='sm:block hidden'>| Web Developer
+            <span className='md:block hidden'>| Web Developer
             </span>
           </p>
         </Link>
         {/* sm indicates that display is set to flex only when window size > 640px */}
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden md:flex flex-row gap-10'>
           {
             navLinks.map((links) => (
               <li
@@ -50,7 +50,7 @@ const Navbar = () => {
         </ul>
 
         <div
-          className='sm:hidden flex flex-1 justify-end items-center'
+          className='md:hidden flex flex-1 justify-end items-center'
         >
           <img
             src={toggle ? close : menu} alt="menu"
